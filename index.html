@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="id">
+<head>
   <head>
     <!-- Favicon untuk browser standar -->
     <link rel="icon" href="https://i.ibb.co.com/cXrz2bwm/favicon-32x32.png" type="image/x-icon">
@@ -11,9 +12,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>ヮBABASBOT</title>
+  <title>Portofolio ヮBabas</title>
   <style>
-  
   @keyframes slideFadeIn {
   0% {
     opacity: 0;
@@ -40,9 +40,6 @@
 #product {
   animation-delay: 0.6s;
 }
-#feature {
-  animation-delay: 0.6s;
-}
 #duration {
   animation-delay: 0.8s;
 }
@@ -63,7 +60,7 @@
     }
 
     body {
-      font-family: 'Poppins', sans-serif;
+      font-family: 'Arial', sans-serif;
       background-color: #f9f9f9;
       color: #333;
       transition: background-color 0.3s ease;
@@ -73,8 +70,6 @@
   flex-direction: column;
   min-height: 100vh;
   margin: 0;
-      padding: 0;
-      text-align: center;
 }
 
 main {
@@ -94,7 +89,7 @@ footer span {
     header {
       background-color: #007BFF;
       padding: 10px 0;
-      margin-top: 10px;
+      margin-top: 16px;
     }
 
     .nav-right {
@@ -290,55 +285,7 @@ footer span {
       font-size: 16px;
       text-align: center;
     }
-   .feature {
-     max-width: 1200px;
-      background: white-space;
-      margin: auto;
-      margin-bottom: 20px;
-      border-radius: 10px;
-      padding: 20px;
-      border: 2px solid #007BFF;
-      box-shadow: 0 0 12px rgba(0, 170, 255, 0.4);
-      transition: transform 0.3s, box-shadow 0.3s;
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 20px;
-    }
 
-    .feature:hover {
-      transform: scale(1.02);
-      box-shadow: 0 0 20px rgba(0, 170, 255, 0.8);
-    }
-    .feature h3 {
-      margin-top: 0;
-      color: #007BFF;
-      
-    }
-   .blue-line {
-      height: 2px;
-      width: auto;
-      background-color: #007BFF;
-      box-shadow: 0 0 10px rgba(0, 170, 255, 0.6);
-      border-radius: 2px;
-    }
-    
-    .feature-container {
-      max-width: 1200px;
-      margin: auto;
-      padding: 20px;
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 20px;
-    }
-        .feature-wrapper {
-      max-width: 1200px;
-      margin: auto;
-      border: 3px solid #00aaff;
-      border-radius: 20px;
-      box-shadow: 0 0 25px rgba(0, 170, 255, 0.6);
-      overflow: hidden;
-      background-color: #fff;
-    }
     .note {
       font-size: 14px;
       color: #555;
@@ -372,7 +319,7 @@ footer span {
       max-width: 400px;
       text-align: center;
       padding: 15px;
-      background-color: white;
+      background-color: #f0f8ff;
       border: 2px solid #007BFF;
       border-radius: 12px;
       box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
@@ -431,11 +378,6 @@ footer span {
       .social-links {
         gap: 10px;
       }
-         .highlight-title {
-      color: #25D366;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-      margin-bottom: 10px;
-    }
     }
     #payment {
   border: 2px solid #007BFF; /* Bingkai biru */
@@ -461,10 +403,9 @@ footer span {
   </style>
 </head>
 <body>
-<header>
+  <header>
     <div class="nav-right">
       <button class="nav-button" onclick="showSection('home')">Home</button>
-            <button class="nav-button" onclick="showSection('feature')">Fitur</button>
       <button class="nav-button" onclick="showSection('linkgrup')">Link Grup</button>
       <button class="nav-button" onclick="showSection('product')">Product</button>
       <button class="nav-button" onclick="showSection('payment')">Payment</button>
@@ -474,17 +415,17 @@ footer span {
   <main id="main-content">
     <section id="home" class="content-section">
       <img src="https://files.catbox.moe/znwqbs.jpg" alt="Foto Profil" class="home-img" />
-      <h1>Selamat datang di PortoBabas</h1>
-      <span>Saya menyediakan layanan bot WhatsApp yang serba guna, siap membantu Anda kapan saja!</span>
+      <h1>Selamat Datang di PortoBabas</h1>
+      <span>Open layanan bot WhatsApp yang serba guna, siap membantu Anda kapan saja!</span>
       <br><br>
-      <span>Jika kamu mau menggunakan botnya secara gratis, kamu bisa join ke grup yang udah di sediakan tombol <b>" Link Grup "</b> Di atas!</span>
+      <span>Jika kamu mau menggunakan botnya secara gratis, kamu bisa join ke grup yang udah di sediakan tombol <br>" Link Grup " Di atas!</span>
 
       <div class="contact-box">
-        <h2>Kontak Owner</h2><br>
         <span>Jika ada yang mau ditanyakan soal bot, bisa langsung hubungi owner di bawah ini</span><br>
         <a class="wa-button" href="https://wa.me/6285119201210?text=Hai%20min,%20saya%20mau%20tanya%20tentang%20botnya" target="_blank"><i class="fab fa-whatsapp whatsapp-icon"></i> Chat via WhatsApp
 </a>
       </div>
+
       <div class="contact-box">
         <h2>Follow Us</h2>
         <div class="social-links">
@@ -506,65 +447,12 @@ footer span {
         </div>
       </div>
     </section>
-  <section id="feature" class="content-section">
-      <h1>Fitur Shina - Ai</h1>
-      <p>Jika kamu ingin tau banyak tentang fiturnya, kamu bisa join ke grup botnya dan lihat sendiri ya!</p><br>
-      <div class="feature-container">
-  <div class="feature">
-    <h3>Aktif 24 Jam</h3>
-    <div class="blue-line"></div>
-    <span>Bot selalu aktif ketika kamu sedang membutuhkan nya, dan selalu aktif juga di dslam grup agar grup kamu aman</span>
-  </div>
-  
-  <div class="feature">
-    <h3>Downloader</h3>
-    <div class="blue-line"></div>
-    <span>Bot bisa download video TikTok, YouTube, Facebook, Instagram, dll. Hanya dengan link dan videonya tidak ada watermark.</span>
-  </div>
-  
-  <div class="feature">
-    <h3>Jaga Grup</h3>
-    <div class="blue-line"></div>
-    <span>Bot bisa membantu mengelola grup dengan memantau dan mengatur obrolan, menyambut orang masuk dan keluar, termasuk menyaring pesan yang tidak pantas.</span>
-  </div>
 
-  <div class="feature">
-    <h3>Notifikasi</h3>
-    <div class="blue-line"></div>
-    <span>Bot bisa mengirimkan pengingat atau notifikasi untuk acara penting, seperti ulang tahun, pertemuan, dll.</span>
-  </div>
-  
-    <div class="feature">
-    <h3>Informasi</h3>
-    <div class="blue-line"></div>
-    <span>Bot bisa memberikan informasi berupa gempa, cuaca, dll yang terbaru sesuai lokasi anggota grup.</span>
-  </div>
-  
-    <div class="feature">
-    <h3>Media Sharing</h3>
-    <div class="blue-line"></div>
-    <span>Bot bisa membantu membagikan atau mencari gambar, video, atau dokumen secara mudah.</span>
-  </div>
-  
-        <div class="feature">
-    <h3>Statistik</h3>
-    <div class="blue-line"></div>
-    <span>Bot bisa memberikan statistik tentang aktivitas grup, seperti anggota yang paling aktif dan lain-lain.</span>
-  </div>
-  </div>
-  
-  </section>
-  
     <section id="linkgrup" class="content-section">
-      <h1>Link Grup Shina - Ai</h1>
+      <h1>Link Grup</h1>
       <p>Gabung ke grup bot agar kamu bisa menggunakan botnya secara gratis!.</p>
-      
-      <div class="group-links">
-        <div class="group-item">
-          <h3>Redeem Code</h3>
-          <a href="https://wa.me/601121580474?text=.redeem JUMATBERKAH" target="_blank"><i class="fab fa-whatsapp whatsapp-icon"></i> Klik Disini</a>
-        </div>
 
+      <div class="group-links">
         <div class="group-item">
           <h3>Jangan Lupa Donasi</h3>
           <a href="https://sociabuzz.com/babasids/tribe" target="_blank">Donasi</a>
@@ -588,7 +476,6 @@ footer span {
     </section>
 
     <section id="product" class="content-section">
-    <h1>Product Shina - Ai</h1><br>
       <div class="product-container">
         <div class="product-list">
           <h2>PREMIUM USER</h2>
@@ -683,7 +570,8 @@ footer span {
       sections.forEach(section => {
         section.classList.remove('active');
         section.style.display = 'none';
-      })
+      });
+
       const target = document.getElementById(sectionId);
       target.style.display = 'block';
       setTimeout(() => {
@@ -707,4 +595,80 @@ footer span {
   <script>
 const hargaMap = {
   premium: {
-    "15
+    "15 Hari": 8000,
+    "1 Bulan": 15000,
+    "2 Bulan": 30000,
+    "1 Tahun": 60000,
+    "Permanent": 100000
+  },
+  basic: {
+    "15 Hari": 10000,
+    "1 Bulan": 15000,
+    "2 Bulan": 30000
+  },
+  plus: {
+    "15 Hari": 15000,
+    "1 Bulan": 25000,
+    "2 Bulan": 45000
+  },
+  vvip: {
+    "15 Hari": 20000,
+    "1 Bulan": 35000,
+    "2 Bulan": 65000
+  }
+};
+
+document.getElementById("produk").addEventListener("change", function () {
+  const produk = this.value;
+  const durasiSelect = document.getElementById("durasi");
+  durasiSelect.innerHTML = `<option value="">-- Pilih Durasi --</option>`;
+  if (hargaMap[produk]) {
+    Object.keys(hargaMap[produk]).forEach(durasi => {
+      const option = document.createElement("option");
+      option.value = durasi;
+      option.textContent = durasi;
+      durasiSelect.appendChild(option);
+    });
+  }
+  document.getElementById("harga").value = "";
+});
+
+document.getElementById("durasi").addEventListener("change", function () {
+  const produk = document.getElementById("produk").value;
+  const durasi = this.value;
+  if (produk && durasi && hargaMap[produk][durasi]) {
+    document.getElementById("harga").value = "Rp " + hargaMap[produk][durasi].toLocaleString("id-ID");
+  }
+});
+
+document.getElementById("konfirmasiBtn").addEventListener("click", function (e) {
+  const nama = document.getElementById("nama").value.trim();
+  const produk = document.getElementById("produk").value;
+  const durasi = document.getElementById("durasi").value;
+  const metode = document.getElementById("metode").value;
+  const harga = document.getElementById("harga").value;
+
+  if (!nama || !produk || !durasi || !metode || !harga) {
+    alert("Mohon lengkapi semua data terlebih dahulu.");
+    e.preventDefault();
+    return;
+  }
+
+  const produkNama = document.getElementById("produk").selectedOptions[0].text;
+  const message = `Halo min, saya ingin melakukan pembelian:\n\n` +
+                  `Nama: ${nama}\n` +
+                  `Produk: ${produkNama}\n` +
+                  `Durasi: ${durasi}\n` +
+                  `Harga: ${harga}\n` +
+                  `Metode: ${metode}\n\n` +
+                  `Tolong diproses ya min :)`;
+
+  const url = `https://wa.me/6285119201210?text=${encodeURIComponent(message)}`;
+  this.href = url;
+});
+  </script><footer style="text-align: center; padding: 20px; font-size: 14px; color: #888;">
+  <span style="color: #007BFF;">ヮBabas</span> © All Rights Reserved
+</footer>
+
+</body>
+</html>
