@@ -15,13 +15,6 @@
   <style>
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
   
-     .title-display {
-      margin-top: 10px;
-      font-size: 2em;
-      font-weight: bold;
-      color: #007BFF;
-      text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-    }
   @keyframes slideFadeIn {
   0% {
     opacity: 0;
@@ -469,8 +462,7 @@ footer span {
   </style>
 </head>
 <body>
-  <div class="title-display" id="pageTitle"></div>
-  <header>
+<header>
     <div class="nav-right">
       <button class="nav-button" onclick="showSection('home')">Home</button>
             <button class="nav-button" onclick="showSection('feature')">Fitur</button>
@@ -691,7 +683,6 @@ footer span {
         section.classList.remove('active');
         section.style.display = 'none';
       })
-      document.getElementById("pageTitle").innerText = document.title;
       const target = document.getElementById(sectionId);
       target.style.display = 'block';
       setTimeout(() => {
@@ -702,4 +693,13 @@ footer span {
     // Default aktifkan Home
     window.onload = function () {
       showSection('home');
-   
+      window.onload = function() {
+  // Menghilangkan loading screen setelah konten dimuat
+  const loadingScreen = document.getElementById('loading-screen');
+  setTimeout(() => {
+    loadingScreen.style.display = 'none';
+  }, 10000);  // Durasi loading screen dan animasi logo
+};
+
+    };
+  </scri
