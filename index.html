@@ -704,9 +704,83 @@ footer span {
 
     };
   </script>
-  <script>
+    <script>
 const hargaMap = {
   premium: {
     "15 Hari": 8000,
     "1 Bulan": 15000,
-    "2 Bu
+    "2 Bulan": 30000,
+    "1 Tahun": 60000,
+    "Permanent": 100000
+  },
+  basic: {
+    "15 Hari": 10000,
+    "1 Bulan": 15000,
+    "2 Bulan": 30000
+  },
+  plus: {
+    "15 Hari": 15000,
+    "1 Bulan": 25000,
+    "2 Bulan": 45000
+  },
+  vvip: {
+    "15 Hari": 20000,
+    "1 Bulan": 35000,
+    "2 Bulan": 65000
+  }
+};
+
+document.getElementById("produk").addEventListener("change", function () {
+  const produk = this.value;
+  const durasiSelect = document.getElementById("durasi");
+  durasiSelect.innerHTML = `<option value="">-- Pilih Durasi --</option>`;
+  if (hargaMap[produk]) {
+    Object.keys(hargaMap[produk]).forEach(durasi => {
+      const option = document.createElement("option");
+      option.value = durasi;
+      option.textContent = durasi;
+      durasiSelect.appendChild(option);
+    });
+  }
+  document.getElementById("harga").value = "";
+});
+
+document.getElementById("durasi").addEventListener("change", function () {
+  const produk = document.getElementById("produk").value;
+  const durasi = this.value;
+  if (produk && durasi && hargaMap[produk][durasi]) {
+    document.getElementById("harga").value = "Rp " + hargaMap[produk][durasi].toLocaleString("id-ID");
+  }
+});
+
+document.getElementById("konfirmasiBtn").addEventListener("click", function (e) {
+  const nama = document.getElementById("nama").value.trim();
+  const produk = document.getElementById("produk").value;
+  const durasi = document.getElementById("durasi").value;
+  const metode = document.getElementById("metode").value;
+  const harga = document.getElementById("harga").value;
+
+  if (!nama || !produk || !durasi || !metode || !harga) {
+    alert("Mohon lengkapi semua data terlebih dahulu.");
+    e.preventDefault();
+    return;
+  }
+
+  const produkNama = document.getElementById("produk").selectedOptions[0].text;
+  const message = `Halo min, saya ingin melakukan pembelian:\n\n` +
+                  `Nama: ${nama}\n` +
+                  `Produk: ${produkNama}\n` +
+                  `Durasi: ${durasi}\n` +
+                  `Harga: ${harga}\n` +
+                  `Metode: ${metode}\n\n` +
+                  `Tolong diproses ya min :)`;
+
+  const url = `https://wa.me/6285119201210?text=${encodeURIComponent(message)}`;
+  this.href = url;
+});
+  </script><footer style="text-align: center; padding: 20px; font-size: 14px; color: #888;">
+  <span style="color: #007BFF;">ヮBabas</span> © All Rights Reserved
+</footer>
+
+</body>
+</html>
