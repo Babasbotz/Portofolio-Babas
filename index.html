@@ -379,6 +379,42 @@ footer span {
         gap: 10px;
       }
     }
+    
+        .feature:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 20px rgba(0, 170, 255, 0.8);
+    }
+    .feature h3 {
+      margin-top: 0;
+      color: #007BFF;
+      
+    }
+   .blue-line {
+      height: 2px;
+      width: auto;
+      background-color: #007BFF;
+      box-shadow: 0 0 10px rgba(0, 170, 255, 0.6);
+      border-radius: 2px;
+    }
+    
+    .feature-container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+        .feature-wrapper {
+      max-width: 1200px;
+      margin: auto;
+      border: 3px solid #00aaff;
+      border-radius: 20px;
+      box-shadow: 0 0 25px rgba(0, 170, 255, 0.6);
+      overflow: hidden;
+      background-color: #fff;
+        }
+    
     #payment {
   border: 2px solid #007BFF; /* Bingkai biru */
   padding: 20px;
@@ -396,8 +432,6 @@ footer span {
 #paymentForm input:focus,
 #paymentForm select:focus {
   border-color: #0056b3; /* Warna border ketika fokus */
-  
-
 }
     
   </style>
@@ -406,6 +440,7 @@ footer span {
   <header>
     <div class="nav-right">
       <button class="nav-button" onclick="showSection('home')">Home</button>
+      <button class="nav-button" onclick="showSection('feature')">Fitur</button>
       <button class="nav-button" onclick="showSection('linkgrup')">Link Grup</button>
       <button class="nav-button" onclick="showSection('product')">Product</button>
       <button class="nav-button" onclick="showSection('payment')">Payment</button>
