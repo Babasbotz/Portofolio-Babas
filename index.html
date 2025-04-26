@@ -684,15 +684,14 @@ footer span {
   </main>
 
   <script>
-        document.getElementById("pageTitle").innerText = document.title;
     
     function showSection(sectionId) {
       const sections = document.querySelectorAll('.content-section');
       sections.forEach(section => {
         section.classList.remove('active');
         section.style.display = 'none';
-      });
-
+      })
+      document.getElementById("pageTitle").innerText = document.title;
       const target = document.getElementById(sectionId);
       target.style.display = 'block';
       setTimeout(() => {
@@ -703,3 +702,4 @@ footer span {
     // Default aktifkan Home
     window.onload = function () {
       showSection('home');
+   
