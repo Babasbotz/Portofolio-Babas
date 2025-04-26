@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="id">
   <head>
-    <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  
     <!-- Favicon untuk browser standar -->
     <link rel="icon" href="https://i.ibb.co.com/cXrz2bwm/favicon-32x32.png" type="image/x-icon">
     <!-- Favicon untuk Android -->
@@ -700,4 +697,9 @@ footer span {
       target.style.display = 'block';
       setTimeout(() => {
         target.classList.add('active');
-    
+      }, 10);
+    }
+
+    // Default aktifkan Home
+    window.onload = function () {
+      showSection('home');
