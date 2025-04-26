@@ -17,13 +17,7 @@
   <title>ヮBABASBOT</title>
   <style>
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
-  body {
-      font-family: 'Poppins', sans-serif;
-      background-color: #e5f6ff;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-    }
+  
      .title-display {
       margin-top: 10px;
       font-size: 2em;
@@ -90,6 +84,8 @@
   flex-direction: column;
   min-height: 100vh;
   margin: 0;
+      padding: 0;
+      text-align: center;
 }
 
 main {
@@ -701,4 +697,7 @@ footer span {
       });
 
       const target = document.getElementById(sectionId);
-   
+      target.style.display = 'block';
+      setTimeout(() => {
+        target.classList.add('active');
+    
